@@ -10,3 +10,8 @@ for i in range(100):
     lista100.append(szam)
 print(len(lista100))
 #muxik
+
+# egyszam jatek
+jatek_szam=0
+nem_talaltdb=0
+ktalallado_szam=lista100[random.randint(len(lista100))] 
