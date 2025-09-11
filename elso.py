@@ -14,4 +14,15 @@ print(len(lista100))
 # egyszam jatek
 jatek_szam=0
 nem_talaltdb=0
-ktalallado_szam=lista100[random.randint(len(lista100))] 
+kitalallado_szam=lista100[random.randint(len(lista100))] 
+tipp=int(input("Adj egy szamot:"))
+while tipp != kitalallado_szam:
+    ujtipp=int(input("Uj tipp:"))
+
+print('jo a tipp')
+tobbjatek=input("akarsz meg jatszani?[i/n]:")
+if (tobbjatek== 'i'):
+    #ez itt  abaj
+else:
+    exit()    
+
