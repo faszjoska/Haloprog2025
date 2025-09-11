@@ -14,17 +14,18 @@ print(len(lista100))
 # egyszam jatek
 jatek_szam=0
 nem_talaltdb=0
-<<<<<<< HEAD
-kitalallado_szam=lista100[random.randint(len(lista100))] 
-tipp=int(input("Adj egy szamot:"))
-while tipp != kitalallado_szam:
-    ujtipp=int(input("Uj tipp:"))
 
-print('jo a tipp')
-tobbjatek=input("akarsz meg jatszani?[i/n]:")
-if (tobbjatek== 'i'):
-    #ez itt  abaj
-else:
-    exit()    
+kitalallado_szam=lista100[random.randint(0,len(lista100))] 
 
-=======
+jatszol=True
+while jatszol:
+    tipp=int(input("Adj egy szamot:"))
+    while tipp != kitalallado_szam:
+        tipp=int(input("Adj egy szamot:"))
+
+    print('jo a tipp')
+
+    folytatas=input("Akarasz még játszani? [I/N]:")
+    if folytatas == "N":
+        jatszol=False
+
