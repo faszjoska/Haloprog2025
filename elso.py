@@ -15,3 +15,17 @@ print(len(lista100))
 jatek_szam=0
 nem_talaltdb=0
 ktalallado_szam=lista100[random.randint(len(lista100))] 
+
+tipp=int(input("Tipped?: (egész szám)"))
+while (tipp != kitalalando_szam):
+
+    tipp=int(input("Tipped?: (egész szám) "))
+    print("Eltaláltad a számot!")
+
+folytatas = input("Akarsz-e még játszani? [I/N]:")
+
+if (folytatas == "I"):
+    #??????????
+
+else:
+    exit ()
