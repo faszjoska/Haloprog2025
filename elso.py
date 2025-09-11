@@ -14,6 +14,7 @@ print(len(lista100))
 # egyszam jatek
 jatek_szam=0
 nem_talaltdb=0
+<<<<<<< HEAD
 kitalallado_szam=lista100[random.randint(len(lista100))] 
 tipp=int(input("Adj egy szamot:"))
 while tipp != kitalallado_szam:
@@ -26,3 +27,4 @@ if (tobbjatek== 'i'):
 else:
     exit()    
 
+=======
