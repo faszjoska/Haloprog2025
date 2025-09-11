@@ -19,10 +19,20 @@ kitalallado_szam=lista100[random.randint(0,len(lista100))]
 
 jatszol=True
 while jatszol:
-    tipp=int(input("Adj egy szamot:"))
-    while tipp != kitalallado_szam:
-        tipp=int(input("Adj egy szamot:"))
 
+    tipp_sz=input("Adj egy szamot:").strip()
+    if tipp_sz.isdecimal():
+        tipp=int(tipp_sz)
+    else:
+        print("Egész számot kell megadni")
+        continue
+    while tipp != kitalallado_szam:
+        tipp_sz=input("Adj egy szamot:").strip()
+        if tipp_sz.isdecimal():
+            tipp=int(tipp_sz)
+        else:
+            print("Egész számot kell megadni")
+            continue
     print('jo a tipp')
 
     folytatas=input("Akarasz még játszani? [I/N]:")
