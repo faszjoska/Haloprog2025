@@ -20,8 +20,9 @@ kitalallado_szam=lista100[random.randint(0,len(lista100))]
 
 jatszol=True
 while jatszol:
-
+    jatek_szam+=1
     tipp_sz=input("Adj egy szamot:").strip()
+    
     if tipp_sz.isdecimal():
         tipp=int(tipp_sz)
     else:
@@ -32,9 +33,11 @@ while jatszol:
             print("Nagyobb a szám")
         else:
             print("Kissebb a szám")
-        tipp_sz=input("Adj egy szamot:").strip()
+        tipp_sz=input("Adj egy szamot:\n(ha ki akarsz lépni EXIT)").strip()
         if tipp_sz.isdecimal():
             tipp=int(tipp_sz)
+        elif tipp_sz=="EXIT":
+            exit()
         else:
             print("Egész számot kell megadni")
             continue
