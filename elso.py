@@ -4,10 +4,11 @@ import random
 # lista létrehozasa
 lista100=[]
 
-# lista feltoltese random 100 db ketjegyu szamokkal
-for i in range(100):
+# lista feltoltese random 40 db ketjegyu szamokkal
+while len(lista100)!=40:
     szam=random.randint(10,99)
-    lista100.append(szam)
+    if szam not in lista100:
+        lista100.append(szam)
 print(len(lista100))
 #muxik
 
@@ -27,6 +28,10 @@ while jatszol:
         print("Egész számot kell megadni")
         continue
     while tipp != kitalallado_szam:
+        if tipp< kitalallado_szam:
+            print("Nagyobb a szám")
+        else:
+            print("Kissebb a szám")
         tipp_sz=input("Adj egy szamot:").strip()
         if tipp_sz.isdecimal():
             tipp=int(tipp_sz)
